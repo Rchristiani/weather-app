@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Widget</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    background: #4789EF;
+    color: white;
+    font-size: 30px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+  }
+  a,
+  a:hover,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  .weather_widget{
+    width: 400px;
+    height: 200px;
+    margin: 150px auto;
+
+  }
+
+</style>
+<body>
+
+
+  <div class="weather_widget">
+    <img src="" alt="weather icon" class="weather_image">
+    <span class="weather_string">{ Weather }</span>
+    <p class="temp"> <span class="temp_c">##</span>&#176;C</p>
+    <p class="city_name">{ City Name }</p>
+    <p class="date_time">{ Date and Time }</p>
+  </div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script src="weather-app.js"></script>
+</body>
+</html>
